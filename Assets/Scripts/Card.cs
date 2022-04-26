@@ -26,9 +26,11 @@ public class Card : MonoBehaviour
     {
         ChangeColor(CardColor.Default);
     }
-    private void OnMouseDown()
+
+    private void OnMouseUp()
     {
-        
+        ChangeColor(cardColor);
+        GameManager.AssignCard(this);
     }
 
     private void ChangeColor(CardColor color)
@@ -59,6 +61,7 @@ public class Card : MonoBehaviour
     public CardColor GetCardColor() => cardColor;
     public void TurnOff()
     {
+        Debug.Log("Cambiado a blanco", gameObject);
         ChangeColor(CardColor.Default);
     }
 
