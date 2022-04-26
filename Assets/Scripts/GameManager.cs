@@ -1,14 +1,27 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
 
-    private static Card card1;
-    private static Card card2;
+    private Card card1;
+    private Card card2;
 
-    public static void AssignCard(Card card)
+    private bool[] correctColors = new bool[Card.GetColorCount()];
+
+    private bool playerWin = false;
+
+    private void Start()
+    {
+        for (short i = 0; i < correctColors.Length; i++)
+        {
+            correctColors[i] = false;
+        }
+    }
+
+    public void AssignCard(Card card)
     {
         if(card1 == null)
         {
@@ -18,14 +31,16 @@ public class GameManager : MonoBehaviour
         {
             card2 = card;
             
-            //("CompareCards",1.0f);
+            Invoke("CompareCards",0.4f);
         }
     }
-    private static void CompareCards()
+    private void CompareCards()
     {
         if (card1.GetCardColor() == card2.GetCardColor())
         {
             Debug.Log("Well Combinated");
+            correctColors[card1.GetColorID()]= true;
+            Invoke("CheckForWin",0.4f);
         }
         else
         {
@@ -35,6 +50,16 @@ public class GameManager : MonoBehaviour
         }
         card1 = null;
         card2 = null;
+    }
+
+    private void CheckForWin()
+    {
+        for (short i = 0; i < correctColors.Length; i++)
+        {
+            if (!correctColors[i]) return;
+        }
+        Debug.Log("El jugador gana el juego :D");
+        playerWin = true;
     }
 
 }

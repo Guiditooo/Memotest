@@ -15,8 +15,10 @@ public class Card : MonoBehaviour
     }
 
     [SerializeField] private CardColor cardColor;
+    [SerializeField] private GameManager gm;
 
     private MeshRenderer mr;
+    private const int colorCount = 6;
 
     private void Awake()
     {
@@ -30,7 +32,7 @@ public class Card : MonoBehaviour
     private void OnMouseUp()
     {
         ChangeColor(cardColor);
-        GameManager.AssignCard(this);
+        gm.AssignCard(this);
     }
 
     private void ChangeColor(CardColor color)
@@ -63,6 +65,37 @@ public class Card : MonoBehaviour
     {
         Debug.Log("Cambiado a blanco", gameObject);
         ChangeColor(CardColor.Default);
+    }
+
+    public static int GetColorCount() => colorCount-1;
+    public int GetColorID()
+    {
+        int id = 0;
+        switch (cardColor)
+        {
+            case CardColor.Yellow: 
+                id = 0;
+                break;
+            case CardColor.Blue:
+                id = 1;
+                break;
+            case CardColor.Red:
+                id = 2;
+                break;
+            case CardColor.Green:
+                id = 3;
+                break;
+            case CardColor.Cyan:
+                id = 4;
+                break;
+            case CardColor.Default:
+                id = 5;
+                break;
+            default:
+                Debug.LogError("NO HAY ID PORQUE NO HAY COLOR");
+                break;
+        }
+        return id;
     }
 
 }

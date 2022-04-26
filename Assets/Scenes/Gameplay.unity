@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7372686495109910782, guid: 77d64ea9f54fa2a46b400d2fd18d0407, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1092595775}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77d64ea9f54fa2a46b400d2fd18d0407, type: 3}
 --- !u!4 &503110691 stripped
@@ -185,24 +189,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6216880305046379707, guid: 77d64ea9f54fa2a46b400d2fd18d0407, type: 3}
   m_PrefabInstance: {fileID: 503110690}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &550384165 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5651234330248862287, guid: 77d64ea9f54fa2a46b400d2fd18d0407, type: 3}
-  m_PrefabInstance: {fileID: 8107223736980706717}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &550384166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550384165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7944d90d12b844e4e889abe81dd3c21f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardColor: 0
 --- !u!1001 &625983794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -258,6 +244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Card (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6715159087056489541, guid: 3c24a7530bf018542a9ff3303e350b01, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1092595775}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c24a7530bf018542a9ff3303e350b01, type: 3}
 --- !u!4 &625983795 stripped
@@ -410,7 +400,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -496,6 +486,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8003698854133206515, guid: c8f25e561ec8b20408bbc3d12e1fe90a, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1092595775}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8f25e561ec8b20408bbc3d12e1fe90a, type: 3}
 --- !u!4 &970540370 stripped
@@ -593,6 +587,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 982241956}
     m_Modifications:
+    - target: {fileID: 811737087883124333, guid: a97e067a5544ce54ebdb9f90ae29253f, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1092595775}
     - target: {fileID: 4074649086733255410, guid: a97e067a5544ce54ebdb9f90ae29253f, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -708,6 +706,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9011758186435157391, guid: b3cfa9f6963bc084a9db95d14aa3571b, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1092595775}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3cfa9f6963bc084a9db95d14aa3571b, type: 3}
 --- !u!4 &1824820231 stripped
@@ -770,6 +772,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8003698854133206515, guid: c8f25e561ec8b20408bbc3d12e1fe90a, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1092595775}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8f25e561ec8b20408bbc3d12e1fe90a, type: 3}
 --- !u!4 &2924823784264000988 stripped
@@ -784,6 +790,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 982241956}
     m_Modifications:
+    - target: {fileID: 811737087883124333, guid: a97e067a5544ce54ebdb9f90ae29253f, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1092595775}
     - target: {fileID: 4074649086733255410, guid: a97e067a5544ce54ebdb9f90ae29253f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -894,6 +904,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9011758186435157391, guid: b3cfa9f6963bc084a9db95d14aa3571b, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1092595775}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3cfa9f6963bc084a9db95d14aa3571b, type: 3}
 --- !u!1001 &8107223736980706717
@@ -951,6 +965,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7372686495109910782, guid: 77d64ea9f54fa2a46b400d2fd18d0407, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1092595775}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77d64ea9f54fa2a46b400d2fd18d0407, type: 3}
 --- !u!4 &8107223736980706718 stripped
@@ -1013,6 +1031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Card
       objectReference: {fileID: 0}
+    - target: {fileID: 6715159087056489541, guid: 3c24a7530bf018542a9ff3303e350b01, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1092595775}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c24a7530bf018542a9ff3303e350b01, type: 3}
 --- !u!4 &8891719391438877338 stripped
